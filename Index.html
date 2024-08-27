@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evaluación Módulo 2</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/EvaMod2.css">
+</head>
+
+<body>
+    <header id="cabeza">
+        <h1>Mi Pokeportafolio</h1>
+    </header>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a style="color: white" class="navbar-brand" href="#">Sobre mí</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a style="color: white" class="nav-link active" aria-current="page"
+                            href="#habilidades">Habilidades</a>
+                    </li>
+                    <li class="nav-item">
+                        <a style="color: white" class="nav-link" href="#experiencia">Experiencia Laboral</a>
+                    </li>
+                    <li class="nav-item">
+                        <a style="color: white" class="nav-link" href="#pokemon">Mi Pokemon favorito</a>
+                    </li>
+                    <li class="nav-item">
+                        <a style="color: white" class="nav-link" href="#contacto">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="body-one">
+        <aside class="col-6 col-sm-4 col-md-3 col-lg-3 col-xl-2">
+
+            <div class="card col-lg-2" style="width: 12rem;">
+                <img src="./assets/imagenes/Alonso.jpg" class="card-img-front1" alt="...">
+                <img src="./assets/imagenes/Alonso2.jpg" class="card-img-back1" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Alonso Meza</h5>
+                    <p class="card-text">Me presento, mi nombre es Alonso Meza. Soy estudiante de Bootstrap y Javascript
+                        FullStack</p>
+                </div>
+            </div>
+            <hr><br>
+            <h3 id="contacto" style="text-align: center;">Contacto</h3>
+            <form id="formulario">
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Email</label>
+                    <input type="email" class="form-control" required id="exampleInputEmail1">
+
+                    <label for="exampleInputNumberd1" class="form-label">Teléfono</label>
+                    <input type="number" class="form-control" required id="exampleInputNumberd1">
+
+                    <label for="exampleInputText1" class="form-label">Comentario</label>
+                    <input type="text" class="form-control" required id="exampleInputText1">
+                </div>
+                <button type="submit" class="btn btn-primary">Enviar datos</button>
+                <div id="mensaje" class="alert alert-success mt-3" style="display: none;">
+                    La información ha sido enviada correctamente
+                </div>
+            </form>
+        </aside>   
+        <main class="col-6 col-sm-8 col-md-9 col-lg-9 col-xl-10">
+            <header>
+                <h2 id="sobreMi">Sobre mí</h2>
+            </header>
+            <p>
+                Soy una persona interesada en aprender programación. Me gusta jugar a los videojuegos, salir a
+                caminar y del deporte.<br> Me gusta la música rock, sinfonía y electronica.<br> Me he leido las saga del
+                señor de los anillos completa junto el sillmarilion y los tres historias más detalladas que surgió
+                dentro de la Tierra Media.
+            </p>
+            <div>
+                <button type="button" class="btn btn-warning">Habilidades</button>
+                <button type="button" class="btn btn-info">Experiencia Laboral</button>
+            </div>
+            <article id="pokeFondo">
+                <figure id="habilidades">
+                    <header>
+                        <h4>Habilidades</h4>
+                    </header>
+                    <p>En el curso he aprendido a usar en Visual Studio Code es:
+                    </p>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>Javascript</li>
+                        <li>Bootstrap</li>
+                        <li>JQuery</li>
+                    </ul>
+                </figure>
+                <figure id="experiencias">
+                    <header>
+                        <h4 id="experiencia">Experiencia Laboral</h4>
+                    </header>
+                    <p>Mis experiencias laborale son:</p>
+                    <ol>
+                        <li>Trabajo en Equipo</li>
+                        <li>Liderazgo</li>
+                        <li>Atención al Cliente</li>
+                        <li>Tutor de acompañamiento en las áreas académico, técnico y administrativo</li>
+                    </ol>
+                </figure>
+            </article>
+            <article id="pokemon">
+                <header>
+                    <h2>Mi Pokémon favorito</h2>
+                </header>
+                <p>Dentro del mundo Pokémon, mi Pokémon favorito es Cyndaquil.</p>
+                <div id="pokeCard" class="card" style="width: 12rem">
+                    <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/155.png"
+                        class="card-img-front" alt="...">
+                    <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/shiny/155.png"
+                        class="card-img-back" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">Suele estar encorvado. Si se enfada o se asusta, lanzará llamas por el
+                            lomo.</p>
+                    </div>
+                </div>
+            </article>
+        </main>
+    </div>
+    <footer>
+        <h2 style="color: white">Contenido creado por Alonso Meza</h2>
+        <button onclick="location.href='#cabeza';">Subir</button>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="./assets/js/EvaMod2.js"></script>
+</body>
+
+</html>

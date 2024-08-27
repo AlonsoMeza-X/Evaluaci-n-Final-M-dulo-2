@@ -1,0 +1,88 @@
+#cabeza {
+    margin: 0%;
+    padding: 0%;
+    border: 0%;
+    background: linear-gradient(109.6deg, rgb(255, 219, 47) 11.2%, rgb(244, 253, 0) 100.2%);
+}
+
+body {
+    background: linear-gradient(112.1deg, rgb(32, 38, 57) 11.4%, rgb(63, 76, 119) 70.2%);
+}
+
+h1 {
+    text-align: center;
+}
+
+nav {
+    background-image: radial-gradient(circle at 50% -3.03%, #8b62ee 0, #4d42d4 50%, #0026bb 100%);
+    margin-bottom: 10px;
+}
+
+.body-one {
+    display: flex;
+}
+
+aside {
+    background: radial-gradient(590px at 8.2% 13.8%, rgb(18, 35, 60) 0%, rgb(187, 187, 187) 90%);
+
+    width: 15%;
+
+    .card-img-back1 {
+        display: none;
+    }
+
+    .card {
+        margin: auto;
+        width: auto;
+        max-width: 13rem;
+        min-width: 12rem;
+    }
+
+    #formulario {
+        background-color: gray;
+        text-align: center;
+    }
+
+}
+
+main {
+    background: linear-gradient(76.8deg, rgb(121, 45, 129) 3.6%, rgb(36, 31, 98) 90.4%);
+    width: 84%;
+    margin-left: 10px;
+    color: white;
+
+    figure {
+        display: none;
+    }
+
+    .card-img-back {
+        display: none;
+    }
+
+    #pokemon {
+        /* Explicar */
+        background-color: #356c76;
+        background-image: url(https://pa1.aminoapps.com/5982/b4a3e094d3b5ccee02a246154d44adf717af7a1e_hq.gif);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100% 100%;
+        color: white;
+        text-align: center;
+    }
+
+    #pokeCard {
+        margin: auto;
+    }
+
+    #pokeFondo {
+        background-image: url(https://pa1.aminoapps.com/6344/b0d7343a693332df0a3eb017b5d104fa1d0e6350_hq.gif);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100% 100%;
+
+    }
+}
+
+footer {
+    text-align: center;
+}
